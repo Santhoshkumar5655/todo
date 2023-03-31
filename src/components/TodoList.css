@@ -1,0 +1,52 @@
+ul.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  gap: 1rem;
+}
+ul.todo-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  background-color: rgb(var(--light-color));
+  border: 1px solid rgb(var(--primary-color), .25);
+  transition: 0.15s;
+}
+ul.todo-list :where(li:hover, li:focus-within){
+  box-shadow: 0 0 1rem rgb(var(--dark-color), .1);
+}
+ul.todo-list li p{
+  flex: 1;
+}
+ul.todo-list li .buttons{
+  display: flex;
+  gap: .5rem;
+}
+ul.todo-list li .buttons button{
+  padding: .75rem 1.25rem;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  color: rgb(var(--light-color));
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+ul.todo-list li .buttons button.done{
+  background-color: rgb(var(--success-color));
+}
+ul.todo-list li .buttons button.delete{
+  background-color: rgb(var(--danger-color));
+}
+ul.todo-list li .buttons button.done:hover{
+  background-color: rgb(var(--success-color), .75);
+}
+ul.todo-list li .buttons button.delete:hover{
+  background-color: rgb(var(--danger-color), .75);
+}

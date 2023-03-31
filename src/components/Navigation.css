@@ -1,0 +1,28 @@
+nav{
+  padding: 1rem 0;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  width: fit-content;
+  width: -moz-fit-content;
+  background-color: rgb(var(--tertiary-color));
+}
+nav ul li{
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(var(--light-color));
+}
+nav ul li:hover{
+  color: rgb(var(--light-color), .8);
+}
